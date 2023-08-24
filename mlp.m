@@ -75,6 +75,7 @@ for t=1:epoch
             output_data_train(i)=o3;
             error_data_train(i)=target-o3;
         end
+        
         mse_train(t)=mse(error_data_train);
 
         error_data_test=zeros(1,num_test);
